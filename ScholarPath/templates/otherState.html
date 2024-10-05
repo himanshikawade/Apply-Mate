@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/assets/css/otherState.css" />
+    <title>OtherState</title>
+</head>
+<body>
+    <!-- nav -->
+    <!-- <header>
+        <a href="home.html"><img src="/assets/images/navimage.png" alt="AI Scholrs Logo" class="logo"></a>
+        <nav>
+            <button class="nav-toggle" id="nav-toggle">Menu</button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="100"><a href="#">Home</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="200"><a href="homeState.html">Home State</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="300"><a href="otherState.html">Other State</a></li>
+            </ul>
+            <a href="about.html"><button class="get-started" data-aos="fade-right" data-aos-delay="700">Get started</button></a>
+        </nav>
+    </header> -->
+        <form action="thank-you.html">
+            <h2>Scholarship Application Form</h2>
+            
+            <!-- Personal Information -->
+                <legend>Personal Information</legend>
+                <div class="form-group fullname">
+                    <label for="fullname">Full Name (As per official documents):</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group date">
+                    <label for="date">Date of Birth (DD/MM/YYYY):</label>
+                    <input type="date" id="date" placeholder="Select your date of birth" required />
+                </div>
+                <div class="form-group gender">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="" selected disabled>Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group contact">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="text" id="contactNumber" placeholder="Enter your contact number" required />
+                </div>
+                <div class="form-group email">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required />
+                </div>
+                <div class="form-group address">
+                    <label for="address">Address:</label>
+                    <textarea id="address" placeholder="Enter your address" required></textarea>
+                </div>
+                <div class="form-group state">
+                    <label for="state">State of Domicile:</label>
+                    <input type="text" id="state" placeholder="Enter your state of domicile" required />
+                </div>
+                <div class="form-group nationality">
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" placeholder="Enter your nationality" required />
+                </div>
+        
+            <!-- Academic Information -->
+                <legend>Academic Information</legend>
+                <div class="form-group institution">
+                    <label for="institution">Current Educational Institution:</label>
+                    <input type="text" id="institution" placeholder="Enter your institution name" required />
+                </div>
+                <div class="form-group institutionAddress">
+                    <label for="institutionAddress">Institution Address:</label>
+                    <textarea id="institutionAddress" placeholder="Enter your institution address" required></textarea>
+                </div>
+                <div class="form-group course">
+                    <label for="course">Course/Program Enrolled:</label>
+                    <input type="text" id="course" placeholder="Enter your course/program" required />
+                </div>
+                <div class="form-group level">
+                    <label for="level">Level of Study:</label>
+                    <select id="level" required>
+                        <option value="" selected disabled>Select your level of study</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Postgraduate">Postgraduate</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+                </div>
+                <div class="form-group year">
+                    <label for="year">Year of Study:</label>
+                    <select id="year" required>
+                        <option value="" selected disabled>Select your year of study</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </div>
+                <div class="form-group percentage">
+                    <label for="percentage">Aggregate Percentage/CGPA:</label>
+                    <input type="text" id="percentage" placeholder="Enter your percentage/CGPA" required />
+                </div>
+        
+            <!-- Scholarship Details -->
+            
+                <legend>Scholarship Details</legend>
+                <div class="form-group scholarship">
+                    <label for="scholarship">Scholarship Applying For:</label>
+                    <input type="text" id="scholarship" placeholder="Enter scholarship name" required />
+                </div>
+                <div class="form-group reason">
+                    <label for="reason">Reason for Applying:</label>
+                    <textarea id="reason" placeholder="Enter reason for applying" required></textarea>
+                </div>
+                <div class="form-group applyingFromAnotherState">
+                    <label for="applyingFromAnotherState">Are you applying from another state?</label>
+                    <select id="applyingFromAnotherState" required>
+                        <option value="" selected disabled>Select your answer</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="form-group stateName">
+                    <label for="stateName">State Name:</label>
+                    <input type="text" id="stateName" placeholder="Enter your state name" />
+                </div>
+        
+            <!-- Documents Numbers -->
+
+                <legend>Documents Numbers</legend>
+                <div class="form-group aadhar">
+                    <label for="aadharNumber">Upload Identity Proof (Aadhar Card Number):</label>
+                    <input type="text" id="aadharNumber" placeholder="Enter Aadhar card number" required />
+                </div>
+                <div class="form-group domicileCertificate">
+                    <label for="domicileCertificateNumber">Upload Domicile Certificate Number:</label>
+                    <input type="text" id="domicileCertificateNumber" placeholder="Enter domicile certificate number" required />
+                </div>
+                <div class="form-group incomeCertificate">
+                    <label for="incomeCertificateNumber">Income Certificate Number:</label>
+                    <input type="text" id="incomeCertificateNumber" placeholder="Enter income certificate number" required />
+                </div>
+                <div class="form-group casteCertificate">
+                    <label for="casteCertificateNumber">Caste Certificate Number:</label>
+                    <input type="text" id="casteCertificateNumber" placeholder="Enter caste certificate number" required />
+                </div>
+                <div class="form-group bankPassbook">
+                    <label for="bankPassbookNumber">Bank Passbook Number/AC Number:</label>
+                    <input type="text" id="bankPassbookNumber" placeholder="Enter bank passbook number" required />
+                </div>
+
+        
+            <!-- Bank Information for Scholarship Disbursement -->
+
+                <legend>Bank Information for Scholarship Disbursement</legend>
+                <div class="form-group accountHolderName">
+                    <label for="accountHolderName">Bank Account Holder Name:</label>
+                    <input type="text" id="accountHolderName" placeholder="Enter account holder's name" required />
+                </div>
+                <div class="form-group accountNumber">
+                    <label for="accountNumber">Bank Account Number:</label>
+                    <input type="text" id="accountNumber" placeholder="Enter bank account number" required />
+                </div>
+                <div class="form-group bankName">
+                    <label for="bankName">Bank Name:</label>
+                    <input type="text" id="bankName" placeholder="Enter bank name" required />
+                </div>
+                <div class="form-group ifscCode">
+                    <label for="ifscCode">IFSC Code:</label>
+                    <input type="text" id="ifscCode" placeholder="Enter IFSC code" required />
+                </div>
+
+        
+            <!-- Declaration -->
+                <legend>Declaration</legend>
+                <div class="form-group declaration">
+                    <label>
+                        <input type="checkbox" required /> I hereby declare that all the information provided in this application is true and correct to the best of my knowledge.
+                    </label>
+                </div>
+                <div class="form-group signature">
+                    <label for="signature">Signature (Typed Name):</label>
+                    <input type="text" id="signature" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group date">
+                    <label for="submissionDate">Date (DD/MM/YYYY):</label>
+                    <input type="date" id="submissionDate" required />
+                </div>
+        
+            <!-- Submit Button -->
+            <div class="form-group submit-btn">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+
+      <script>
+        // Selecting form and input elements
+        const form = document.querySelector("form");
+        const passwordInput = document.getElementById("password");
+        const passToggleBtn = document.getElementById("pass-toggle-btn");
+  
+        // Function to display error messages
+        const showError = (field, errorText) => {
+          field.classList.add("error");
+          const errorElement = document.createElement("small");
+          errorElement.classList.add("error-text");
+          errorElement.innerText = errorText;
+          field.closest(".form-group").appendChild(errorElement);
+        };
+  
+        // Function to handle form submission
+        const handleFormData = (e) => {
+          e.preventDefault();
+  
+          // Retrieving input elements
+          const fullnameInput = document.getElementById("fullname");
+          const emailInput = document.getElementById("email");
+          const dateInput = document.getElementById("date");
+          const genderInput = document.getElementById("gender");
+  
+          // Getting trimmed values from input fields
+          const fullname = fullnameInput.value.trim();
+          const email = emailInput.value.trim();
+          const password = passwordInput.value.trim();
+          const date = dateInput.value;
+          const gender = genderInput.value;
+  
+          // Regular expression pattern for email validation
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  
+          // Clearing previous error messages
+          document
+            .querySelectorAll(".form-group .error")
+            .forEach((field) => field.classList.remove("error"));
+          document
+            .querySelectorAll(".error-text")
+            .forEach((errorText) => errorText.remove());
+  
+          // Performing validation checks
+          if (fullname === "") {
+            showError(fullnameInput, "Enter your full name");
+          }
+          if (!emailPattern.test(email)) {
+            showError(emailInput, "Enter a valid email address");
+          }
+          if (password === "") {
+            showError(passwordInput, "Enter your password");
+          }
+          if (date === "") {
+            showError(dateInput, "Select your date of birth");
+          }
+          if (gender === "") {
+            showError(genderInput, "Select your gender");
+          }
+  
+          // Checking for any remaining errors before form submission
+          const errorInputs = document.querySelectorAll(".form-group .error");
+          if (errorInputs.length > 0) return;
+  
+          // Submitting the form
+          form.submit();
+        };
+  
+        // Toggling password visibility
+        passToggleBtn.addEventListener("click", () => {
+          passToggleBtn.className =
+            passwordInput.type === "password"
+              ? "fa-solid fa-eye-slash"
+              : "fa-solid fa-eye";
+          passwordInput.type =
+            passwordInput.type === "password" ? "text" : "password";
+        });
+  
+        // Handling form submission event
+        form.addEventListener("submit", handleFormData);
+      </script>
+    <script src="/assets/js/nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.step');
+            const services = document.querySelectorAll('.services');
+            const options = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            steps.forEach(step => {
+                observer.observe(step);
+            });
+
+            services.forEach(service => {
+                observer.observe(service);
+            });
+
+           
+            });
+        
+    </script>
+</body>
+</html>

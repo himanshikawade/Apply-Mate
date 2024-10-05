@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="home.html"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Kavavi Logo" class="logo"></a>
+        <nav>
+            <button class="nav-toggle" id="nav-toggle">Menu</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="100"><a href="home.html">Home</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="200"><a href="about.html">About</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="300"><a href="services.html">Services</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="400"><a href="#blog">Blog</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="500"><a href="#">Contact</a></li>
+            </ul>
+            <button class="get-started" data-aos="fade-right" data-aos-delay="700">Get started</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h3 class="contact-title">Contact Us</h3>
+            <h1>Ready to <span>elevate</span> your <br> digital presence?</h1>
+            <p>Whether you have questions about our services, want to discuss your <br>
+            project in detail, or simply want to say hello, we're here to help.</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='images/emails.png') }}" alt="Email">
+                <p>Email</p>
+                <p>contact@clustorcomputing.com</p>
+            </div>
+            <div class="separator-vertical"></div>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='images/phones.png') }}"  alt="Phone">
+                <p>Phone</p>
+                <p>+91 (954)540-0369</p>
+            </div>
+            <div class="separator-vertical"></div>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='images/location.png') }}" alt="Location">
+                <p>Address</p>
+                <p>84, Pandurang Gawande<br>Layout, Khamla Nagpur (IN)</p>
+            </div>
+            <div class="separator-vertical"></div>
+            <div class="contact-item">
+                <img src="{{ url_for('static', filename='images/socials.png') }}" alt="Social">
+                <p>Social</p>
+                <p>
+                    <a href="https://twitter.com/"><img src="https://img.icons8.com/?size=100&id=60451&format=png&color=ff7d29" alt="Twitter"></a>
+                    <a href="https://linkedin.com/"><img src="https://img.icons8.com/?size=100&id=60443&format=png&color=ff7d29" alt="LinkedIn"></a>
+                    <a href="https://facebook.com/"><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=ff7d29" alt="Facebook"></a>
+                </p>
+            </div>
+        </div>
+      
+        <div class="separator-horizontal"></div>
+        <!-- Add a contact form, FAQ section, and CTA -->        
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <textarea name="message" rows="5" placeholder="Message"></textarea><br>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+        <!-- FAQ section -->
+        <div class="faq">
+            <div class="faq-header">
+                <h3 class="faq-title">FAQs</h3>
+                <h1 style="text-align: center;">Frequently Asked Questions</h1>
+            </div>
+            <div class="faq-details">
+                <details>
+                    <summary>
+                        <span>How long does it take to see results from your digital marketing services?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>It depends on the services you choose and the goals of your campaign...</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>Do I need to sign a long-term contract to work with your agency?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>No, we offer flexible contract terms to suit your needs...</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>How do you measure the success of your digital marketing campaigns?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>We use a variety of metrics including traffic, engagement, and conversions...</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>Can you work with businesses in my industry?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Yes, we have experience working with a wide range of industries...</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>How involved will I need to be in the digital marketing process?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>We tailor our services to your needs, whether you prefer a hands-on approach or a more hands-off...</p>
+                </details>
+            </div>
+        </div>
+        <!-- CTA section -->
+<div class="cta">
+    <h2>Ready to take your digital <br> marketing to the next level?</h2>
+    <p>Ready to discuss your digital marketing goals and how we can help <br>
+         you achieve them? Schedule a complimentary consultation with one of <br> our experts.</p>
+    <button>Schedule a free consultation</button>
+</div>
+
+<div class="separator-horizontal"></div>
+
+    </div>
+    <!-- footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img  src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="footer-logo">
+                <p>Digitalization is a trendy word right now, but what does it mean for your particular business? It’s our aim to help institutions and organizations thrive in the data-driven world with the help of software solutions.</p>
+                <div class="footer-social-icons">
+                    <a href="https://twitter.com/"><img src="https://img.icons8.com/?size=100&id=60451&format=png&color=ff7d29" alt="Twitter"></a>
+                    <a href="https://linkedin.com/"><img src="https://img.icons8.com/?size=100&id=60443&format=png&color=ff7d29" alt="LinkedIn"></a>
+                    <a href="https://facebook.com/"><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=ff7d29" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 style="margin-top: 30px; color:black">Contact Us</h3>
+                <p>Email: <a href="mailto:contact@clustorcomputing.com">contact@clustorcomputing.com</a></p>
+                <p>Phone: <a href="tel:+919545400369">+91 (954)540-0369</a><br><a href="tel:+917709291565">+91 (770)929-1565</a></p>
+                <p>Address: 84, Pandurang Gawande Layout, Khamla Nagpur (IN)</p>
+            </div>
+            <div class="footer-column">
+                <h3 style="margin-top: 30px; color:black">IT Services</h3>
+                <p>Data Science & Analytics</p>
+                <p>Machine Learning</p>
+                <p>Web Applications</p>
+                <p>Mobile Applications</p>
+                <p>IOT Integration</p>
+            </div>
+            <div class="footer-column">
+                <h3 style="margin-top: 30px; color:black">Newsletter</h3>
+                <p>We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Add Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+</body>
+</html>

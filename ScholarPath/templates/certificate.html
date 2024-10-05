@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Eligibility Certificate</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .certificate-container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 5px solid #000;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="certificate-container">
+    <h1>Scholarship Eligibility Certificate</h1>
+    
+    <p>Student Name: <span>{{ data['fullname'] }}</span></p>
+    <p>Date of Birth: <span>{{ data['dob'] }}</span></p>
+    <p>Gender: <span>{{ data['gender'] }}</span></p>
+    <p>Contact Number: <span>{{ data['contact'] }}</span></p>
+    <p>Address: <span>{{ data['address'] }}</span></p>
+    <p>Name of Institution: <span>{{ data['name of institution'] }}</span></p>
+    <p>Course: <span>{{ data['course'] }}</span></p>
+    <p>Year of Study: <span>{{ data['year of study'] }}</span></p>
+    <p>Scholoarship Applying for: <span>{{ data['scholorship applying for'] }}</span></p>
+    <p>State of Domicile: <span>{{ data['state'] }}</span></p>
+    <p>Nationality: <span>{{ data['nationality'] }}</span></p>
+    <p>Caste Certificate: <span>{{ data['caste certificate'] }}</span></p>
+    <p>Aadhar Card: <span>{{ data['Aadhar card'] }}</span></p>
+    <p>Income Certificate: <span>{{ data['income certificate'] }}</span></p>
+    <p>Caste Certificate: <span>{{ data['caste certificate'] }}</span></p>
+    <p>Domicile Certificate: <span>{{ data['Domicile certificate'] }}</span></p>
+
+
+
+    <h2>Eligibility Criteria:</h2>
+    <ul>
+        <li>The student has met all the required conditions.</li>
+        <li>The student is a citizen of the India.</li>
+        <li> The student is a high school senior or currently enrolled in college.</li>
+        <li> The student has a minimum GPA of 3.0.</li>
+        <li>The student demonstrates financial need.</li>
+        
+    </ul>
+
+    <div class="signature-section">
+        <p>Verification:</p>
+        <p>Signature: _________________________</p>
+        <p>Date: _________________________</p>
+    </div>
+</div>
+
+</body>
+</html>

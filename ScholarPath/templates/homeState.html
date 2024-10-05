@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaVaaVi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homeState.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=General+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="{{ url_for('static', filename='images/navimage.png') }}" alt="AI Scholrs Logo" class="logo"></a>
+        <nav>
+            <button class="nav-toggle" id="nav-toggle">Menu</button>
+            <!-- <img class="image" src="" alt="navImage"> -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="100"><a href="home.html">Home</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="200"><a href="homeState.html">Home State</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="300"><a href="otherState.html">Other State</a></li>
+            </ul>
+            <a href="about.html"><button class="get-started" data-aos="fade-right" data-aos-delay="700">Get started</button></a>
+        </nav>
+    </header> 
+        <div class="faq">
+            <div class="faq-header">
+                <h3 class="faq-title">FAQs</h3>
+                <h1 style="text-align: center;">Frequently Asked Questions</h1>
+        <div class="faq-details">
+            <details>
+                <summary>
+                <span>I'm having trouble logging in to the scholarship portal. What should I do?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Ensure that you are using the correct username and password. If you've forgotten your password, try resetting it using the "Forgot Password" option. If the issue persists, contact the scholarship portal's technical support team for assistance.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>The form is not accepting my date of birth. What's the correct format?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>The date of birth format is usually DD/MM/YYYY. Ensure that you are entering your date of birth in this format. If you're still facing issues, try clearing your browser's cache and cookies, then retry.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>I'm unable to upload my documents. What could be the reason?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Check the file format and size of your documents. Ensure that they are in the accepted formats (e.g., PDF, JPEG, PNG) and within the specified size limits. Also, check your internet connection and try uploading the documents again.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>My document is not uploading, and I'm getting an error message. What should I do?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Check the document's file size and format. Ensure that it meets the specified requirements. If the issue persists, try compressing the document or breaking it down into smaller files.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>How do I ensure that my documents are uploaded correctly?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Before uploading, ensure that your documents are:
+                    <ul>
+                        <li>In the correct format (e.g., PDF, JPEG, PNG)</li>
+                        <li>Within the specified size limits</li>
+                        <li>Clearly scanned or photographed, with all information visible</li>
+                        <li>Labeled correctly (e.g., "Academic Transcript", "ID Proof")</li>
+                    </ul>
+                </p>
+            </details>
+            <details>
+                <summary>
+                    <span>What if I've uploaded a wrong document by mistake? Can I replace it?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Yes, you can usually replace an uploaded document. Check the scholarship portal's guidelines for replacing uploaded documents. If you're unsure, contact the technical support team for assistance.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>I'm having trouble filling out the form because the fields are not clear. What should I do?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Ensure that you are using a compatible browser and device to access the scholarship portal. Try zooming in or out to adjust the font size. If the issue persists, try clearing your browser's cache and cookies, then retry. If you're still facing issues, contact the technical support team for assistance.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>Can I save my progress and complete the form later?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Yes, most scholarship portals allow you to save your progress and complete the form later. Look for the "Save and Continue Later" or "Save Draft" option. Make sure to note down your login credentials and the form's reference number to access your saved application later.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>I'm unable to find the "Submit" button. Where is it located?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>The "Submit" button is usually located at the end of the form. Ensure that you have completed all the required fields and uploaded the necessary documents. If you're still unable to find the "Submit" button, try scrolling down to the bottom of the page or checking the top-right corner of the screen.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>How do I know if my application has been successfully submitted?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>After submitting your application, you should receive a confirmation message or email with a reference number. Make sure to note down this reference number for future correspondence. If you don't receive a confirmation message, contact the technical support team to verify the status of your application.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>Can I edit my application after submitting it?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>It depends on the scholarship portal's policies. Some portals may allow you to edit your application within a certain timeframe, while others may not. Check the portal's guidelines or contact the technical support team to inquire about editing your application.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>What if I've forgotten my login credentials? How can I recover them?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Try using the "Forgot Password" option to reset your password. If you've forgotten your username, contact the technical support team for assistance. Make sure to provide your registered email address or phone number to verify your identity.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>How do I ensure that my documents are uploaded securely?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Ensure that you are using a secure and reliable internet connection. Upload your documents on the official scholarship portal only. Avoid using public Wi-Fi networks for sensitive transactions. The platform uses encryption to protect your data during upload.</p>
+            </details>
+            <details>
+                <summary>
+                    <span>Is my personal information safe on this platform?</span>
+                    <span class="symbol">+</span>
+                </summary>
+                <p>Yes, we take your privacy seriously. We use advanced security measures to protect your personal information. Your data will not be shared with third parties without your consent.</p>
+            </details>
+        </div>
+    </div>
+
+
+    
+<script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
