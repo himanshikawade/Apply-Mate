@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Chatbot</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f9ff;
+            color: #333;
+        }
+        #chat-box {
+            width: 600px;
+            height: 500px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            overflow-y: scroll;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #user-input {
+            width: calc(100% - 120px);
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        #send-btn {
+            padding: 15px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        #send-btn:hover {
+            background-color: #0056b3;
+        }
+        .chat-bubble {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 15px;
+            font-size: 15px;
+            line-height: 1.5;
+            display: inline-block;
+            max-width: 75%;
+        }
+        .user-bubble {
+            background-color: #007bff;
+            color: white;
+            text-align: right;
+            float: right;
+            border-bottom-right-radius: 0;
+        }
+        .bot-bubble {
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: left;
+            float: left;
+            border-bottom-left-radius: 0;
+        }
+        #chat-box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .scholarship-theme {
+            background-color: #004c99;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-box">
+        <div class="scholarship-theme">Welcome to the Scholar Path AI</div>
+    </div>
+    <div style="width: 600px; margin: 0 auto;">
+        <input type="text" id="user-input" placeholder="Ask about scholarships...">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // On send button click
+            $('#send-btn').click(function() {
+                var userMessage = $('#user-input').val();
+                if (userMessage.trim() === "") return; // Don't send empty messages
+                $('#chat-box').append('<div class="chat-bubble user-bubble"><strong>You:</strong> ' + userMessage + '</div>');
+                $.post('/get_response', { message: userMessage }, function(data) {
+                    $('#chat-box').append('<div class="chat-bubble bot-bubble"><strong>Bot:</strong> ' + data.response + '</div>');
+                    $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);  // Scroll to the bottom
+                });
+                $('#user-input').val(''); // Clear the input
+            });
+
+            // Trigger send on Enter key press
+            $('#user-input').keypress(function(event) {
+                if (event.keyCode === 13) {
+                    $('#send-btn').click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

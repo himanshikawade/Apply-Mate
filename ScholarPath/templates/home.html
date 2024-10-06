@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Path</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=General+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <header>
+        <a href="home.html"><img src="{{ url_for('static', filename='images/navimage.png') }}" alt="AI Scholrs Logo" class="logo"></a>
+        <nav>
+            <button class="nav-toggle" id="nav-toggle">Menu</button>
+            <!-- <img class="image" src="" alt="navImage"> -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="100"><a href="#">Home</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="200"><a href="homeState.html">Home State</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="300"><a href="scholarship_form.html">Other State</a></li>
+                <li class="hvr-underline-from-center" data-aos="fade-right" data-aos-delay="300"><a href="index.html">Chat Bot</a></li>
+            </ul>
+            <a href="contact.html"><button class="get-started" data-aos="fade-right" data-aos-delay="700">Get started</button></a>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="kavavi-container" >
+                <div class="kavavi" data-aos="fade-up">
+                    <span class="ScholarPath" title="Marathi meaning for Ka">ScholarPath</span>
+                </div>
+                <h3 data-aos="fade-up">An information technology company specializing in platform-based digital transformation, supporting businesses to become connected, open, intelligent, and scalable.</h3>
+                <div class="button-container" data-aos="fade-up">
+                    <button class="goto-get-started"><a href="homeState.html">Home State</a></button>
+                    <button class="hero-contact-button"><a href="scholarship_form.html">Other State</a></button>
+                </div>
+                <div class="kavavi-positions">
+                    <div class="top-right" data-aos="fade-up-left"><img src="https://img.icons8.com/?size=100&id=14116&format=png&color=ff7d29"> Smart Scholarship Matching</div>
+                    <div class="top-left" data-aos="fade-up-right"><img src="https://img.icons8.com/?size=100&id=ALrL90O362w9&format=png&color=ff7d29"> Document Knowledge</div>
+                    <div class="center-left" data-aos="fade-right"><img src="https://img.icons8.com/?size=100&id=IVlCJgXg1RYx&format=png&color=ff7d29"> Real-Time Application Tracking</div>
+                    <div class="center-right" data-aos="fade-left"><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=ff7d29"> Direct Communication</div>
+                    <div class="bottom-right" data-aos="fade-up-left"><img src="https://img.icons8.com/?size=100&id=112468&format=png&color=ff7d29"> User-Friendly Interface</div>
+                    <div class="bottom-left" data-aos="fade-up-right"><img src="https://img.icons8.com/?size=100&id=aTrWEDlg4xEW&format=png&color=ff7d29"> Multi-Lingual Support</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- About Section -->
+        <section id="about" class="section" data-aos="zoom-in-up" data-aos-once ="true">
+            <div class="about-container">
+                <div class="about-text">
+                    <h4>About us</h4>
+                    <h2>Your Go-To Resource for Navigating the Scholarship Application Process</h2>
+                    <p>Welcome to Scholarship Help Desk, your go-to resource for navigating the scholarship application process. Our platform is designed to streamline document management, form filling, and provide comprehensive support for students from both Home State and Other State.</p>
+                </div>
+                <div class="about-image">
+                    <div class="about-us" data-aos="zoom-in-up" data-aos-once ="true">
+                        <img src="{{ url_for('static', filename='images/aimage.png') }}" alt="About Image" class="about-us image1">
+                        <img src="{{ url_for('static', filename='images/portal.png') }}" alt="imagebg" class="about-us image2">
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- Services Section -->
+    <div class="container">
+        <div class="title">Scholarship Application Support: </div>
+        <div class="subtitle">Simplified Guidance for Home and Other State Students.</div>
+        <div class="services">
+            <div class="service">
+                <h3>Home State</h3>
+                <p>The Home State page is dedicated to providing detailed information and guidance to students who are residents of the Home State. This page will help students navigate the complexities of scholarship applications, understand the necessary documents, and ensure they are properly prepared.
+
+                    Key Features of the Home State Page:
+                    Guidelines on Required Documents:
+                    
+                    A detailed list of all the documents required for applying to scholarships, including:
+                    Proof of Residency: e.g., utility bills, lease agreements, or a state-issued ID.
+                    Academic Transcripts: How to obtain and submit official transcripts.
+                    Recommendation Letters: Guidelines on who should write them and how to request them.
+                    Financial Need Documents: Information on submitting income statements or FAFSA (Free Application for Federal Student Aid) reports.
+                    Explanation of each document’s purpose and how it influences the application process. </p>
+            </div>
+            <div class="service">
+                <h3>Other State</h3>
+                <p>Other State Page: Document Validation and Support for Non-Home State Students
+                    Cross-State Document Guidelines:
+                    
+                    Information on any additional documentation required due to cross-state applications, including:
+                    Explanation of cross-state residency verification.
+                    Guidelines on proving previous educational history in another state.
+                    Clarification on unique requirements for out-of-state applicants to ensure that their applications are not rejected due to missing or incompatible documents.
+                    Verification Assistance and Support:
+                    
+                    Assistance in getting documents validated by appropriate authorities, such as:
+                    Local notary offices or state departments that can authenticate residency or academic records.
+                    Guidance on the validation process to ensure that students’ documents are acceptable for submission to Home State institutions.</p>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- Faq Section -->
+        <div class="faq">
+            <div class="faq-header">
+                <h3 class="faq-title">FAQs</h3>
+                <h1 style="text-align: center;">Frequently Asked Questions</h1>
+            </div>
+            <div class="faq-details">
+                <details>
+                    <summary>
+                        <span>What is this platform for?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Our platform helps students from both home and other states apply for scholarships. It simplifies the process with a chatbot for home state students and provides document authentication certificates for out-of-state applicants.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>How does the chatbot help home state students?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>No, we offer flexible contract terms to suit your needs..The chatbot guides students through the entire scholarship application process, answering queries, and ensuring all required documents are submitted correctly.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>What is the document authentication system for out-of-state students?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>For students applying for scholarships in other states, our platform provides a certificate that verifies the authenticity of their documents, reducing chances of rejection.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>Who can use this platform?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Students from all states looking to apply for scholarships can use our platform. We offer tailored solutions for home and out-of-state students.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>How do I get the authentication certificate for my documents?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Once you upload the required documents, our system generates a certificate that verifies their authenticity, which you can include with your scholarship application.</p>
+                </details>
+                <details>
+
+                    <summary>
+                        <span>Is the chatbot available 24/7?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Yes, our chatbot is available 24/7 to provide assistance and help you complete your scholarship application efficiently.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <span>Is there a fee to use this platform?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>No, the platform is free to use for all students seeking scholarships.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>What types of scholarships are covered?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>We cover a variety of scholarships, including merit-based, need-based, and other state-specific scholarships.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>How can I track the progress of my application?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Once your application is submitted, you can track its status directly on the platform.</p>
+                </details>
+                <details>
+                    <summary>
+                        <span>Can I apply for multiple scholarships through this platform?</span>
+                        <span class="symbol">+</span>
+                    </summary>
+                    <p>Yes, you can apply for multiple scholarships using our platform. The chatbot will assist you through the process for each application.</p>
+                </details>
+            </div>
+        </div>
+
+    
+    <script src="{{ url_for('static', filename='js/nav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
